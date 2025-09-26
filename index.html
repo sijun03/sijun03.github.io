@@ -2,67 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Codisoul — coded w/ passion</title>
-  <meta name="description" content="Codisoul is a solo app studio: simple, privacy-first apps. coded w/ passion." />
+  <meta name="description" content="Codisoul is a solo app studio crafting simple, privacy-first apps. coded w/ passion." />
   <meta property="og:title" content="Codisoul" />
   <meta property="og:description" content="Simple, privacy-first apps — coded w/ passion." />
   <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f1115" />
+  <link rel="icon" href="favicon.ico" />
   <style>
     :root{
-      --bg:#0f1115; --fg:#e6e6e6; --muted:#9aa0a6; --accent:#7c8cff; --card:#171922; --border:rgba(255,255,255,.08);
+      --bg:#0f1115; --fg:#e7e7ea; --muted:#a1a6af; --accent:#7c8cff; --card:#171a22; --border:rgba(255,255,255,.09);
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{
-      margin:0; font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
-      background:radial-gradient(80vw 80vw at 70% -10%, #1a1f2e 0%, #0f1115 60%) fixed; color:var(--fg);
-      line-height:1.6;
-    }
-    .wrap{max-width:960px; margin:0 auto; padding:32px 20px 80px}
-    header{
-      display:flex; align-items:center; gap:16px; padding:18px 0 12px; border-bottom:1px solid var(--border); margin-bottom:28px;
-    }
-    .logo{
-      width:44px; height:44px; border-radius:999px; display:grid; place-items:center;
-      background:linear-gradient(145deg,#24283b,#151827); border:1px solid var(--border);
-    }
-    /* Minimal “soul” glyph (circle with flowing lines) */
-    .logo svg{width:26px; height:26px; opacity:.92}
-    .brand h1{margin:0; font-size:1.25rem; letter-spacing:.6px}
+    body{margin:0; font-family: ui-sans-serif,system-ui,-apple-system,Inter,Segoe UI,Roboto,Arial;
+         color:var(--fg); background:radial-gradient(80vw 80vw at 70% -10%, #1a1f2e 0%, #0f1115 58%) fixed; line-height:1.6}
+    a{color:var(--accent); text-decoration:none}
+    .wrap{max-width:900px; margin:0 auto; padding:32px 18px 64px}
+    header{display:flex; align-items:center; gap:14px; padding:14px 0 12px; border-bottom:1px solid var(--border); margin-bottom:26px}
+    .logo{width:44px; height:44px; border-radius:999px; display:grid; place-items:center;
+          background:linear-gradient(145deg,#24283b,#141821); border:1px solid var(--border)}
+    .logo svg{width:26px; height:26px; opacity:.95}
+    .brand h1{margin:0; font-size:1.18rem; letter-spacing:.35px}
     .brand .tag{margin-top:-2px; font-size:.9rem; color:var(--muted)}
-    .hero{
-      margin:30px 0; padding:28px; border:1px solid var(--border); border-radius:16px; background:var(--card);
-      display:grid; gap:12px;
-    }
+    .hero{margin:28px 0; padding:26px; border:1px solid var(--border); border-radius:16px; background:var(--card); display:grid; gap:12px}
     .hero h2{margin:0; font-size:1.8rem}
     .hero p{margin:0; color:var(--muted)}
-    .cta{
-      display:flex; gap:12px; flex-wrap:wrap; margin-top:10px;
-    }
-    .btn{
-      padding:10px 14px; border-radius:12px; text-decoration:none; color:var(--fg);
-      border:1px solid var(--border); background:#151827;
-    }
-    .btn.primary{background:var(--accent); color:#0b0d14; font-weight:600; border-color:transparent}
-    section{margin:34px 0}
-    h3{margin:.2rem 0 0.6rem; font-size:1.1rem; letter-spacing:.4px}
-    .card{
-      border:1px solid var(--border); background:var(--card); border-radius:14px; padding:16px; display:grid; gap:6px;
-    }
-    .grid{display:grid; grid-template-columns:1fr; gap:16px}
-    @media(min-width:760px){ .grid{grid-template-columns:1fr 1fr} }
-    footer{margin-top:46px; padding-top:16px; border-top:1px solid var(--border); color:var(--muted); font-size:.92rem}
-    a{color:var(--accent)}
+    .pill{padding:2px 8px; border:1px solid var(--border); border-radius:999px; font-size:.78rem; color:var(--muted); width:max-content}
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px}
+    .btn{padding:10px 14px; border-radius:12px; color:var(--fg); border:1px solid var(--border); background:#151827}
+    .btn.primary{background:var(--accent); color:#0c0f18; font-weight:600; border-color:transparent}
+    section{margin:32px 0}
+    h3{margin:.2rem 0 .6rem; font-size:1.05rem; letter-spacing:.3px}
+    .grid{display:grid; grid-template-columns:1fr; gap:14px}
+    @media (min-width:760px){ .grid{grid-template-columns:1fr 1fr} }
+    .card{border:1px solid var(--border); background:var(--card); border-radius:14px; padding:16px; display:grid; gap:6px}
     .small{font-size:.92rem; color:var(--muted)}
-    .pill{padding:2px 8px; border:1px solid var(--border); border-radius:999px; font-size:.78rem; color:var(--muted)}
+    footer{margin-top:44px; padding-top:14px; border-top:1px solid var(--border); color:var(--muted); font-size:.92rem}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div class="logo" aria-hidden="true">
-        <!-- abstract “code + soul” mark -->
+        <!-- abstract “code + soul” glyph -->
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="9.5"/>
           <path d="M12 3.2c0 3 2.5 4.5 2.5 6.6 0 2.1-1.4 3.3-2.5 3.3s-2.5-1.2-2.5-3.3c0-2.1 2.5-3.6 2.5-6.6z"/>
@@ -75,53 +59,56 @@
       </div>
     </header>
 
-    <div class="hero">
-      <span class="pill">Solo app studio</span>
-      <h2>Simple, privacy-first apps that help you learn and do more.</h2>
-      <p>Built with care on iPhone and the web. No dark patterns, no data selling — just thoughtful software.</p>
-      <div class="cta">
-        <a class="btn primary" href="#apps">View apps</a>
-        <a class="btn" href="#contact">Contact</a>
-      </div>
-    </div>
+    <main>
+      <section class="hero">
+        <span class="pill">Solo app studio</span>
+        <h2>Simple, privacy-first apps that help you learn and do more.</h2>
+        <p>No dark patterns. No data selling. Just thoughtful software.</p>
+        <div class="cta">
+          <a class="btn primary" href="#apps">View apps</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </section>
 
-    <section id="apps">
-      <h3>Apps</h3>
-      <div class="grid">
-        <div class="card">
-          <strong>Spaced Cards</strong>
-          <div class="small">A minimalist flashcard app using spaced repetition. Fast. Private. Beautiful.</div>
-          <div class="small">Status: in development</div>
-          <!-- Replace with real links later -->
-          <div class="cta" style="margin-top:6px">
-            <a class="btn" href="#">App Store (soon)</a>
-            <a class="btn" href="#">Learn more</a>
+      <section id="apps">
+        <h3>Apps</h3>
+        <div class="grid">
+          <div class="card">
+            <strong>Spaced Cards</strong>
+            <div class="small">A minimalist flashcard app using spaced repetition. Fast. Private. Beautiful.</div>
+            <div class="small">Status: in development</div>
+            <div class="cta" style="margin-top:6px">
+              <a class="btn" href="#" aria-disabled="true">App Store (soon)</a>
+              <a class="btn" href="#" aria-disabled="true">Learn more</a>
+            </div>
+          </div>
+          <div class="card">
+            <strong>Open to collaborations</strong>
+            <div class="small">Custom iOS prototypes, internal tools, or education tech experiments.</div>
+            <div class="cta" style="margin-top:6px">
+              <a class="btn" href="#contact">Start a conversation</a>
+            </div>
           </div>
         </div>
+      </section>
+
+      <section id="about">
+        <h3>About</h3>
         <div class="card">
-          <strong>Open to collaborations</strong>
-          <div class="small">Custom iOS prototypes, internal tools, or education tech experiments.</div>
-          <div class="cta" style="margin-top:6px">
-            <a class="btn" href="#contact">Start a conversation</a>
-          </div>
+          <p>Codisoul is a one-person studio crafting focused apps. The philosophy is simple: build small, useful tools that respect your time and privacy.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about">
-      <h3>About</h3>
-      <div class="card">
-        <p>Codisoul is a one-person studio crafting focused apps. The philosophy is simple: build small, useful tools that respect your time and privacy.</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h3>Contact</h3>
-      <div class="card">
-        <p class="small">Email: <a href="mailto:sijun03@gmail.com">sijun03@gmail.com</a></p>
-        <p class="small">GitHub: <a href="https://github.com/sijun03">github.com/sijun03</a></p>
-      </div>
-    </section>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="card">
+          <p class="small">Email: <a href="mailto:info@codisoul.site">info@codisoul.site</a></p>
+          <p class="small">GitHub: <a href="https://github.com/sijun03">github.com/sijun03</a></p>
+          <!-- If you create a Zoho form later, paste its embed below -->
+          <!-- <div id="zoho-form"></div> -->
+        </div>
+      </section>
+    </main>
 
     <footer>
       © <span id="y"></span> Codisoul. All rights reserved.
