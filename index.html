@@ -1,154 +1,176 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Codisoul — coded w/ passion</title>
-  <meta name="description" content="Codisoul is a solo app studio crafting simple, privacy-first apps. coded w/ passion." />
-  <meta property="og:title" content="Codisoul" />
-  <meta property="og:description" content="Simple, privacy-first apps — coded w/ passion." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#f5f7fb" />
-  <link rel="icon" href="favicon.ico" />
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Codisoul — coded w/ passion</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- IMPORTANT: This page expects the Future Imperfect assets folder. See README.md -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="single is-preload" id="top">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,400;0,700;1,200&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-  <style>
-    :root{
-      --bg: #f5f7fb;
-      --grid:#dfe6f1;
-      --fg: #101827;
-      --muted:#5f6b7a;
-      --accent:#5b6cff;
-      --accent-ink:#0b0f1a;
-      --card:#ffffff;
-      --border: rgba(16,24,39,.10);
-      --shadow: 0 8px 20px rgba(16,24,39,.06);
-    }
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="#top">Codisoul</a></h1>
+        <p>coded w/ passion</p>
+      </header>
 
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; 
-      font-family:"DM Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      color:var(--fg); line-height:1.6;
-      background:
-        radial-gradient(var(--grid) 1px, transparent 1px) 0 0 / 22px 22px,
-        radial-gradient(var(--grid) 1px, transparent 1px) 11px 11px / 22px 22px,
-        linear-gradient(#f9fbff, var(--bg));
-    }
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="#thinking">My Thinking</a></li>
+          <li><a href="#app">Spaced Cards</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="icons">
+          <!-- Add socials if you like -->
+        </ul>
+      </nav>
 
-    a{color:var(--accent); text-decoration:none}
-    .wrap{max-width:1060px; margin:0 auto; padding:36px 18px 72px}
+      <!-- Main -->
+      <div id="main">
 
-    header{display:flex; align-items:center; gap:18px; padding:18px 0 14px; border-bottom:1px solid var(--border); margin-bottom:28px}
-    .logo{
-      width:68px; height:68px; border-radius:18px; display:grid; place-items:center;
-      background:linear-gradient(160deg,#ffffff,#eef2ff);
-      border:1px solid var(--border); box-shadow:var(--shadow);
-    }
-    .logo svg{width:40px; height:40px; opacity:.95; stroke-width:1.4}
+        <!-- My Thinking -->
+        <article id="thinking" class="post">
+          <header>
+            <div class="title">
+              <h2><a href="#thinking">My Thinking</a></h2>
+              <p>Build small, useful, respectful tools. Ship early. Improve often.</p>
+            </div>
+          </header>
+          <a href="#thinking" class="image featured">
+            <img src="images/thinking-hero.jpg" alt="Thinking hero" />
+          </a>
+          <p>
+            Codisoul is about crafting software that respects your time and your data.
+            Fewer features, done well, matter more than long checklists. Privacy is a feature — not a toggle.
+            I iterate quickly: sketch → wireframe → prototype → feedback → refine.
+            The goal is calm, fast, beautiful tools that help you do more.
+          </p>
+        </article>
 
-    .brand h1{
-      margin:0; font-family:"DM Serif Display", serif;
-      font-size:clamp(2.2rem, 4.5vw, 3rem); line-height:1.1;
-      letter-spacing:.5px; font-weight:400;
-    }
+        <!-- Spaced Cards -->
+        <article id="app" class="post">
+          <header>
+            <div class="title">
+              <h2><a href="#app">Spaced Cards</a></h2>
+              <p>A minimalist flashcard app powered by spaced repetition.</p>
+            </div>
+          </header>
+          <a href="#app" class="image featured">
+            <img src="images/spaced-cards-hero.png" alt="Spaced Cards hero" />
+          </a>
+          <p>
+            Learn faster with short, focused sessions. Spaced Cards stays out of your way so you can build a habit without friction.
+          </p>
+          <h3>Principles</h3>
+          <ul>
+            <li><strong>Fast.</strong> Opens instantly and keeps you in flow.</li>
+            <li><strong>Private.</strong> Your decks live with you. No data selling.</li>
+            <li><strong>Beautiful.</strong> Calm UI, readable type, accessible contrast.</li>
+          </ul>
+          <h3>What’s inside</h3>
+          <ul>
+            <li>Spaced repetition scheduling that just works</li>
+            <li>Quick card creation (Markdown-style)</li>
+            <li>Light/Dark theme, keyboard shortcuts</li>
+            <li>Local-first storage; export when you need it</li>
+          </ul>
+          <footer>
+            <ul class="actions">
+              <li><a class="button disabled">App Store (soon)</a></li>
+              <li><a href="#contact" class="button">Join waitlist</a></li>
+            </ul>
+          </footer>
+        </article>
 
-    .brand .tag{
-      margin-top:4px; margin-left:4px; /* moved a bit right */
-      font-size:1.05rem; color:var(--muted);
-      font-family:"DM Sans", sans-serif;
-      font-weight:200; font-style:italic;
-    }
+        <!-- Roadmap -->
+        <article id="roadmap" class="post">
+          <header>
+            <div class="title">
+              <h2><a href="#roadmap">Roadmap</a></h2>
+              <p>What I’m exploring next</p>
+            </div>
+          </header>
+          <a href="#roadmap" class="image featured">
+            <img src="images/roadmap-wireframe.png" alt="Roadmap hero" />
+          </a>
 
-    .hero{
-      margin:32px 0; padding:28px; border:1px solid var(--border);
-      border-radius:18px; background:var(--card); display:grid; gap:12px;
-      box-shadow:var(--shadow);
-    }
-    .hero h2{margin:0; font-size:clamp(1.6rem, 3.4vw, 2.2rem)}
-    .hero p{margin:0; color:var(--muted)}
-    .pill{padding:4px 10px; border:1px solid var(--border); border-radius:999px; font-size:.8rem; color:var(--muted); width:max-content; background:#fff}
-    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:8px}
-    .btn{padding:12px 16px; border-radius:12px; border:1px solid var(--border); background:#fff; color:var(--fg); box-shadow:var(--shadow)}
-    .btn.primary{background:#fff; color:var(--fg); font-weight:700} /* no blue highlight */
+          <h3>Near-term</h3>
+          <ul>
+            <li>Spaced Cards: first public beta</li>
+            <li>CSV / Markdown import & export</li>
+            <li>Privacy-respecting sync</li>
+          </ul>
 
-    section{margin:34px 0}
-    h3{margin:.2rem 0 .7rem; font-size:1.1rem; letter-spacing:.3px}
-    .grid{display:grid; grid-template-columns:1fr; gap:16px}
-    @media (min-width:780px){ .grid{grid-template-columns:1fr 1fr} }
-    .card{border:1px solid var(--border); background:var(--card); border-radius:14px; padding:16px; display:grid; gap:6px; box-shadow:var(--shadow)}
-    .small{font-size:.95rem; color:var(--muted)}
+          <h3>Explorations</h3>
+          <ul>
+            <li>Custom iOS prototypes for learning workflows</li>
+            <li>Internal tools for small teams</li>
+            <li>Tech experiments: minimal editors, offline-first apps</li>
+          </ul>
 
-    footer{margin-top:46px; padding-top:14px; border-top:1px solid var(--border); color:var(--muted); font-size:.95rem}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="logo" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="9.6"/>
-          <path d="M12 3.2c0 3 2.5 4.6 2.5 6.7 0 2.1-1.4 3.3-2.5 3.3s-2.5-1.2-2.5-3.3 2.5-3.7 2.5-6.7z"/>
-          <path d="M6.2 17.1c1.9-1.6 3.8-2.4 5.8-2.4s3.9.8 5.8 2.4"/>
-        </svg>
+          <p><em>Status:</em> Upcoming — shipping in small steps. If you’d like to test or collaborate, reach out.</p>
+          <footer>
+            <ul class="actions">
+              <li><a href="#contact" class="button">Contact</a></li>
+            </ul>
+          </footer>
+        </article>
+
       </div>
-      <div class="brand">
-        <h1>Codisoul</h1>
-        <div class="tag">coded w/ passion</div>
-      </div>
-    </header>
 
-    <main>
-      <section class="hero">
-        <span class="pill">Solo app studio</span>
-        <h2>Simple, privacy-first apps that help you do more.</h2>
-        <p>No dark patterns. No data selling. Just thoughtful software.</p>
-        <div class="cta">
-          <a class="btn primary" href="#apps">View apps</a>
-          <a class="btn" href="#contact">Contact</a>
-        </div>
+      <!-- Sidebar -->
+      <section id="sidebar">
+
+        <!-- About -->
+        <section id="intro">
+          <a href="#top" class="logo">
+            <img src="images/logo.png" alt="Codisoul logo" />
+          </a>
+          <header>
+            <h2>Codisoul</h2>
+            <p>Simple, privacy-first apps that help you do more.</p>
+          </header>
+          <p>
+            I’m a solo developer building focused tools with care. No dark patterns. No data selling. Just thoughtful software.
+          </p>
+          <ul class="actions">
+            <li><a href="#contact" class="button">Contact</a></li>
+          </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <h3>Contact</h3>
+          <p>
+            <strong>Email:</strong> <a href="mailto:info@codisoul.site">info@codisoul.site</a><br/>
+            <strong>GitHub:</strong> <a href="https://github.com/sijun03" target="_blank">github.com/sijun03</a>
+          </p>
+        </section>
+
       </section>
 
-      <section id="apps">
-        <h3>Apps</h3>
-        <div class="grid">
-          <div class="card">
-            <strong>Spaced Cards</strong>
-            <div class="small">A minimalist flashcard app using spaced repetition.</div>
-            <div class="small">Fast. Private. Beautiful.</div>
-            <div class="small">Status: in development</div>
-          </div>
-          <div class="card">
-            <strong>More in the roadmap</strong>
-            <div class="small">Custom iOS prototypes, internal tools, or tech experiments.</div>
-            <div class="small">Status: Upcoming</div>
-          </div>
-        </div>
+      <!-- Footer -->
+      <section id="footer">
+        <ul class="icons"></ul>
+        <p class="copyright">
+          &copy; <span id="y"></span> Codisoul. All rights reserved.
+        </p>
       </section>
 
-      <section id="about">
-        <h3>About</h3>
-        <div class="card">
-          <p>Codisoul is a one-person studio crafting focused apps. The philosophy is simple: build small, useful tools that respect your time and privacy.</p>
-        </div>
-      </section>
+    </div>
 
-      <section id="contact">
-        <h3>Contact</h3>
-        <div class="card">
-          <p class="small">Email: <a href="mailto:info@codisoul.site">info@codisoul.site</a></p>
-          <p class="small">GitHub: <a href="https://github.com/sijun03">github.com/sijun03</a></p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      © <span id="y"></span> Codisoul. All rights reserved.
-    </footer>
-  </div>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
+    <!-- Scripts (expected from Future Imperfect assets) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </body>
 </html>
