@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <a href="/" class="logo">Codisoul</a>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 404 Section -->
+  <main id="main" style="text-align:center; padding:120px 20px;">
+    <h1>404</h1>
+    <p>Sorry, the page you’re looking for doesn’t exist.</p>
+    <a href="/" class="button">Back to Home</a>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; <span id="year"></span> Codisoul — coded w/ passion</p>
+  </footer>
+
+  <script>
+    // update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
